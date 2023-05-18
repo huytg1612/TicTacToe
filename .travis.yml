@@ -1,4 +1,10 @@
 language: csharp
+solution: TicTacToe.sln
+mono: none
+dotnet: 3.1
+script:
+ - dotnet restore
+
 sudo: required
 services:
  - docker
