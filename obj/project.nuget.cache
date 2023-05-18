@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X5l7uS/x5gIBd+qMmWo/rbdEQhKmvhnIy3ppo4nbIqWbUc905XhJy85X6DWwVd/t8GbagfpK18QFyoMiFGdo+g==",
+  "success": true,
+  "projectFilePath": "E:\\Mini projects\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\huytg\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
