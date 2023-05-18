@@ -2,8 +2,6 @@ language: csharp
 solution: TicTacToe.sln
 mono: none
 dotnet: 3.1
-script:
- - dotnet restore
 
 sudo: required
 services:
@@ -11,3 +9,18 @@ services:
 
 before_install:
  - docker build -t tictactoe:latest -f Dockerfile .
+
+script:
+ - dotnet restore
+
+deploy:
+ provider: elasticbeanstalk
+ region: "us-east-1"
+ app: "tictactoe"
+ env: "Tictactoe-env"
+ bucket_name: "elasticbeanstalk-us-east-1-560176329885"
+ bucket_path: "tictactoe"
+ on:
+  branch: master
+ access_key_id: "$ACCESS_ID"
+ secret_access_key: "$SECRET_KEY"
